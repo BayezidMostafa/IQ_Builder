@@ -6,7 +6,7 @@ export const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div className="bg-violet-900">
+        <div className="bg-violet-900 shadow shadow-black">
             <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                 <div className="relative flex items-center justify-between">
                     <Link
@@ -15,7 +15,7 @@ export const Nav = () => {
                         title="iq builder"
                         className="inline-flex items-center"
                     >
-                        <img className='w-7 drop-shadow-md rounded' src={Logo} alt="" />
+                        <img className='w-7 shadow shadow-black rounded' src={Logo} alt="" />
                         <span className="ml-2 text-2xl font-bold tracking-wide text-gray-100 uppercase">
                             IQ BUILDER
                         </span>
@@ -33,7 +33,7 @@ export const Nav = () => {
                         </li>
                         <li>
                             <Link
-                                to="/topic"
+                                to="/home"
                                 aria-label="topic"
                                 title="topic"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -121,7 +121,17 @@ export const Nav = () => {
                                         <ul className="space-y-4">
                                             <li>
                                                 <Link
-                                                    to="/topic"
+                                                    to="/home"
+                                                    aria-label="home"
+                                                    title="home"
+                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                >
+                                                    Home
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to="/home"
                                                     aria-label="Our topic"
                                                     title="Our topic"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
