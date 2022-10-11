@@ -35,7 +35,7 @@ export const Nav = () => {
                         <li>
                             <Link
                                 style={{ textShadow: '1px 1px 3px black' }}
-                                to="/home"
+                                to="/quiztopic"
                                 aria-label="topic"
                                 title="topic"
                                 className="font-medium tracking-wide text-white transition-colors duration-100 text-xl hover:text-gray-200"
@@ -135,7 +135,7 @@ export const Nav = () => {
                                             </li>
                                             <li>
                                                 <Link
-                                                    to="/home"
+                                                    to="/quiztopic"
                                                     aria-label="Our topic"
                                                     title="Our topic"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
