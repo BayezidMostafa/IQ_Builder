@@ -16,13 +16,14 @@ export const Nav = () => {
                         className="inline-flex items-center"
                     >
                         <img className='w-7 shadow shadow-black rounded' src={Logo} alt="" />
-                        <span className="ml-2 text-2xl font-bold tracking-wide text-gray-100 uppercase">
+                        <span className="ml-2 text-2xl font-bold tracking-wide text-gray-100 uppercase" style={{textShadow: '1px 1px 3px black'}}>
                             IQ BUILDER
                         </span>
                     </Link>
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                         <li>
                             <Link
+                                style={{ textShadow: '1px 1px 3px black' }}
                                 to="/home"
                                 aria-label="home"
                                 title="home"
@@ -33,6 +34,7 @@ export const Nav = () => {
                         </li>
                         <li>
                             <Link
+                                style={{ textShadow: '1px 1px 3px black' }}
                                 to="/home"
                                 aria-label="topic"
                                 title="topic"
@@ -43,6 +45,7 @@ export const Nav = () => {
                         </li>
                         <li>
                             <Link
+                                style={{ textShadow: '1px 1px 3px black' }}
                                 to="/statistics"
                                 aria-label="statistics"
                                 title="statistics"
@@ -53,6 +56,7 @@ export const Nav = () => {
                         </li>
                         <li>
                             <Link
+                                style={{ textShadow: '1px 1px 3px black' }}
                                 to="/blog"
                                 aria-label="blog"
                                 title="blog"
