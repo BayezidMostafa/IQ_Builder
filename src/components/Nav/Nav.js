@@ -23,6 +23,16 @@ export const Nav = () => {
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                         <li>
                             <Link
+                                to="/home"
+                                aria-label="home"
+                                title="home"
+                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                            >
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
                                 to="/topic"
                                 aria-label="topic"
                                 title="topic"
