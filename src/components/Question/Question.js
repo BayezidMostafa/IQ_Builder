@@ -1,15 +1,24 @@
+import { toast } from 'react-toastify'
 import React from 'react';
+import { EyeIcon } from '@heroicons/react/24/solid';
 
 const Question = ({ singleQuestion }) => {
-    const { question, id } = singleQuestion;
-    console.log(singleQuestion)
+    const { question, id, correctAnswer, options } = singleQuestion;
+
+
     return (
-        <div className='border'>
-            <div>
-                <p className='text-xl'>{question}</p>
+        <div className='w-5/6 lg:w-1/2 p-5 mx-auto mt-8 rounded-xl bg-violet-900 shadow shadow-black relative'>
+                <div className='flex justify-center relative bottom-10'><EyeIcon className='w-10 text-violet-900 bg-white rounded-3xl'/></div>
+            <div className='text-left text-white'>
+                <p className='text-xl font-semibold' style={{ textShadow: '1px 1px 3px black' }}>Quiz: {question.slice(3, -4)}</p>
+                <div>
+                    {
+                        options.map((option, index) => <div key={index} className='form-check flex'><input onClick={(() => option === correctAnswer ? toast.success('Correct Answer', { autoClose: 800 }) : toast.error('Wrong Answer', { autoClose: 800 }))} className='form-check-input appearance-none h-4 w-4 rounded-full  border border-gray-300 bg-white checked:bg-violet-900 checked:border-white checked:border-4 checked:border-transparent transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer' type="radio" value={option} name="gender" /><label className="form-check-label inline-block text-white text-lg" style={{ textShadow: '1px 1px 2px black' }}>{option}</label></div>)
+                    }
+                </div>
             </div>
             <div>
-                
+
             </div>
         </div>
     );

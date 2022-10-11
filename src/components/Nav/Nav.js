@@ -27,7 +27,7 @@ export const Nav = () => {
                                 to="/home"
                                 aria-label="home"
                                 title="home"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                className="font-medium tracking-wide text-white transition-colors duration-100 text-xl hover:text-gray-200"
                             >
                                 Home
                             </Link>
@@ -38,7 +38,7 @@ export const Nav = () => {
                                 to="/home"
                                 aria-label="topic"
                                 title="topic"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                className="font-medium tracking-wide text-white transition-colors duration-100 text-xl hover:text-gray-200"
                             >
                                 Topic
                             </Link>
@@ -49,7 +49,7 @@ export const Nav = () => {
                                 to="/statistics"
                                 aria-label="statistics"
                                 title="statistics"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                className="font-medium tracking-wide text-white transition-colors duration-100 text-xl hover:text-gray-200"
                             >
                                 Statistics
                             </Link>
@@ -60,7 +60,7 @@ export const Nav = () => {
                                 to="/blog"
                                 aria-label="blog"
                                 title="blog"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                className="font-medium tracking-wide text-white transition-colors duration-100 text-xl hover:text-gray-200"
                             >
                                 Blog
                             </Link>
