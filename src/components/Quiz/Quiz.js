@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const Quiz = ({ quiz }) => {
     const { logo, name, total, id } = quiz;
-    console.log(quiz)
     return (
         <div className='bg-violet-900 m-auto p-5 rounded-2xl text-white shadow-black shadow'>
             <img className='rounded-2xl shadow shadow-black' src={logo} alt="" />
