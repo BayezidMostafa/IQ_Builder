@@ -3,12 +3,12 @@ import React from 'react';
 import { EyeIcon } from '@heroicons/react/24/solid';
 
 const Question = ({ singleQuestion }) => {
-    const { question, id, correctAnswer, options } = singleQuestion;
+    const { question, correctAnswer, options } = singleQuestion;
 
 
     return (
         <div className='w-5/6 lg:w-1/2 p-5 mx-auto mt-8 rounded-xl bg-violet-900 shadow shadow-black relative'>
-                <div className='flex justify-center relative bottom-10'><EyeIcon className='w-10 text-violet-900 bg-white rounded-3xl'/></div>
+                <div className='flex justify-center relative bottom-10'><EyeIcon onClick={()=>toast.info(correctAnswer, {autoClose: 900})} className='w-10 text-violet-900 bg-white rounded-3xl cursor-pointer duration-300 hover:text-violet-700'/></div>
             <div className='text-left text-white'>
                 <p className='text-xl font-semibold' style={{ textShadow: '1px 1px 3px black' }}>Quiz: {question.slice(3, -4)}</p>
                 <div>
