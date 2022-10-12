@@ -2,7 +2,8 @@
 
 ## Live Site Link: https://iq-builder.netlify.app/
 
-## My Projetc Descriptions:
+## My Project Descriptions:
+
   🪄 **Project Features:**
   
   ➦ **My Project Have A Unique Name With NavBar, Header Banner, Content Area**
